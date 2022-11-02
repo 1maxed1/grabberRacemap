@@ -59,16 +59,16 @@ const printOut = (value) => {
 };
 
 const createAnzahlPTags = (anzahl) => {
-  for (i = 1; i < anzahl + 1; i++) {
+  for (let i = 0; i < anzahl; i++) {
     const tag = document.createElement("h1");
-    tag.setAttribute("id", `${i}`);
+    tag.setAttribute("id", `${i + 1}`);
     const container = document.getElementById("container");
     container.appendChild(tag);
   }
 };
 
 const showToScreen = (starterobject, anzahl) => {
-  for (i = 0; i < anzahl; i++) {
+  for (let i = 0; i < anzahl; ++i) {
     let text = `${starterobject[i].Rank}: ${starterobject[i].Name}`;
     document.getElementById(`${i + 1}`).innerHTML = text;
   }
@@ -88,5 +88,6 @@ const callbackFunction = (urlCreate, anzahl) => {
 
 const url = createUrl(returnQueryParams()[0]);
 const anzahl = returnQueryParams()[1];
+console.log(anzahl);
 createAnzahlPTags(anzahl);
 reload(() => callbackFunction(url, anzahl));
