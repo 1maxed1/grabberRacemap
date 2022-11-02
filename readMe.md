@@ -12,7 +12,7 @@ This grabber is designed for real-time visualization of data during a race
 Download the repository with these [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository?tool=cli)
 
 > Or run:
-> gh repo clone https://github.com/1maxed1/grabberRacemap.git
+> git clone https://github.com/1maxed1/grabberRacemap.git
 
 ## Working with the different grabbers
 
