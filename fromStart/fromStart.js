@@ -1,12 +1,3 @@
-/**
- * Wrap this inside the reload function
- * First step: Create a fun(queryParams)--> Url
- * Make a call with this Url that returns the data wanted
- * Update the h1 tages in the index.html
- */
-
-//Tags that display the wanted data
-
 //Racemap test Id --> 61a21210e5d45d000199f7d9
 
 const reload = (callback) => {
