@@ -29,13 +29,10 @@ const returnEventID = () => {
 };
 
 const createUrl = (eventId) => {
-  //scheme: https://racemap.com/api/data/v1/:eventId/current
   return `https://racemap.com/api/data/v1/${eventId}/current`;
 };
 
 const requestData = async (url) => {
-  //
-
   const request = await fetch(url);
   const toJSon = await request.json();
   let distanceArray = [];
