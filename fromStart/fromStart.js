@@ -14,6 +14,7 @@ const returnEventID = () => {
     for (const [key, value] of queryParams) {
       if (key == "eventId") {
         eventId = value;
+        console.log([key, value]);
       } else {
         alert("Misinput at the query Params");
       }
